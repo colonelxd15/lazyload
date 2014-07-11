@@ -1,0 +1,32 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+html,body{
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+.fullpage{
+	background-image: url("/images/loading.gif");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #FFF;
+}
+#footer{
+	background-color: #000;
+	position: fixed;
+	height: 50px;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+}
+@for $i from 2 through 14{
+	#smithsonian-#{$i}{
+		// background-size: cover;
+		//background-image: url('/images/loading.gif');
+	}
+}
