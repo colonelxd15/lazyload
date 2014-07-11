@@ -9,7 +9,7 @@ $.fn.lazyload = function(){
 			$temp.attr('src', $img);
 			$temp.load(function(){
 				if(visible === true){
-					$self.css({'background-image':'url("'+$temp.attr('src')+'")','background-size':'cover'});
+					$self.css('background-image','url("'+$temp.attr('src')+'")').delay(950).css('background-size','cover');
 				}	
 			})
 		});

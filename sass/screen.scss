@@ -26,7 +26,6 @@ html,body{
 }
 @for $i from 2 through 14{
 	#smithsonian-#{$i}{
-		// background-size: cover;
-		//background-image: url('/images/loading.gif');
+		transition: all 1s ease-in-out;
 	}
 }
