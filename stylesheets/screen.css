@@ -76,7 +76,7 @@ html, body {
 
 /* line 13, ../sass/screen.scss */
 .fullpage {
-  background-image: url("/images/loading.gif");
+  background-image: url("../images/loading.gif");
   background-position: center center;
   background-repeat: no-repeat;
   background-color: #FFF;
