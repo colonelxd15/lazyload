@@ -2,12 +2,16 @@ $.fn.lazyload = function(){
 	this.each(function(){
 		var $self = $(this)
 		, $img = $self.data('uri')
-		, ev = 'inview';
+		, ev = 'inview'
+		, $temp = $('<img />');
 
 		$self.bind(ev,function(event, visible){	
-			if(visible === true){
-				$self.css({'background-image':'url("'+$img+'")','background-size':'cover'});
-			}
+			$temp.attr('src', $img);
+			$temp.load(function(){
+				if(visible === true){
+					$self.css({'background-image':'url("'+$temp.attr('src')+'")','background-size':'cover'});
+				}	
+			})
 		});
 		
 	});
